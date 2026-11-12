@@ -1,0 +1,21 @@
+2026-11-12 15:04:02 | INFO     | sistema_gestion | === Sistema Integral Software FJ iniciado correctamente ===
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Cliente registrado: Cliente [CLI-001] - Laura Gómez (Doc: 1090456789, Email: laura.gomez@empresa.com, Estado: Activo)
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Cliente registrado: Cliente [CLI-002] - Carlos Mendoza (Doc: 88234910, Email: cmendoza@techcol.co, Estado: Activo)
+2026-11-12 15:04:02 | ERROR    | sistema_gestion | Registro de cliente fallido (CLI-003): Formato de correo electrónico inválido: 'correo_sin_arroba.com'.
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Servicio registrado: Sala [SRV-01] 'Sala Innovación A' | Capacidad: 25 personas (con videoconferencia) | Tarifa: $80,000.00/h
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Servicio registrado: Alquiler Equipo [SRV-02] 'Workstations Linux' | Tipo: Portátil i7 32GB x4 und | Tarifa unitaria: $35,000.00/h
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Servicio registrado: Asesoría [SRV-03] 'Arquitectura Cloud' | Área: DevOps & AWS | Modalidad: Presencial | Tarifa: $120,000.00/h
+2026-11-12 15:04:02 | ERROR    | main | Simulación 7 - Creación de servicio rechazada: La tarifa por hora debe ser mayor a cero (recibido: -50000.0).
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Reserva creada: Reserva [RES-101] | Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Sala Innovación A | Duración: 3h | Total: $303,450.00
+2026-11-12 15:04:02 | INFO     | reserva | Reserva RES-101 CONFIRMADA | Cliente: Laura Gómez | Total: $303450.00
+2026-11-12 15:04:02 | INFO     | reserva | Cierre de transacción de confirmación [RES-101] (éxito=True).
+2026-11-12 15:04:02 | INFO     | sistema_gestion | Reserva creada: Reserva [RES-102] | Estado: PENDIENTE | Cliente: Carlos Mendoza | Servicio: Workstations Linux | Duración: 5h | Total: $771,120.00
+2026-11-12 15:04:02 | INFO     | reserva | Reserva RES-102 CONFIRMADA | Cliente: Carlos Mendoza | Total: $771120.00
+2026-11-12 15:04:02 | INFO     | reserva | Cierre de transacción de confirmación [RES-102] (éxito=True).
+2026-11-12 15:04:02 | INFO     | reserva | Reserva RES-102 PROCESADA exitosamente para el servicio 'Workstations Linux'.
+2026-11-12 15:04:02 | INFO     | reserva | Auditoría de procesamiento finalizada para reserva RES-102.
+2026-11-12 15:04:02 | ERROR    | sistema_gestion | Creación de reserva fallida (RES-103): Fallo al validar costos para la reserva 'RES-103': El servicio 'Arquitectura Cloud' (SRV-03) no se encuentra disponible.
+2026-11-12 15:04:02 | ERROR    | reserva | Error al cancelar reserva RES-102: La reserva 'RES-102' ya fue PROCESADA y no puede cancelarse.
+2026-11-12 15:04:02 | INFO     | reserva | Registro de cancelación verificado para reserva RES-102.
+2026-11-12 15:04:02 | ERROR    | sistema_gestion | Fallo controlado al cancelar reserva: La reserva 'RES-102' ya fue PROCESADA y no puede cancelarse.
+2026-11-12 15:04:02 | ERROR    | sistema_gestion | Creación de reserva fallida (RES-104): Fallo al validar costos para la reserva 'RES-104': El descuento debe estar en el rango [0.0, 1.0) (recibido: 1.5).
